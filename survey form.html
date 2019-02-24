@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-type">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Survey form</title>
+	    <link rel="stylesheet" type="text/css" href="./survey_form.css">
+  </head>
+  <body>
+  	<h1 id="title">Survey Form</h1>
+  	<div id="form">
+     	<p id="description">Let us know about yourself...</p>
+     	<form id="survey-form" action="">
+            <div class="row">
+	            <div class="leftSide">
+			     		<label for="name" id="name-label">Full name: </label>
+			    </div>
+	            <div class="rigthSide">
+			     		<input id='name' type="text" name="name" class="inputfield" placeholder="Enter full name" required>
+			    </div>
+		    </div>
+			<div class="row">
+	            <div class="leftSide">     		
+			     		<label for="email" id="email-label"> Email: </label>
+			    </div>
+	            <div class="rigthSide">
+			     		<input id='email' type="email" class="inputfield" name="email" placeholder="Enter email" required>
+			    </div>
+		    </div>
+			<div class="row">
+	            <div class="leftSide">     		
+			     		<label for="age" id="age-label"> Age:</label> 
+			    </div>
+	            <div class="rigthSide"> 		
+			     		<input id='age' type="number" name="age" class="inputfield" placeholder="Enter age" value='18' min='4' max='99' required>
+			        </div>
+		    </div> 		
+     		<div class="row">
+	            <div class="leftSide">
+     		        <label for="dropdown"> Which is your current role?  </label>
+     		    </div>
+	            <div class="rigthSide">
+		            <select id="dropdown">
+		            	<option disabled selected> Select curent role </option>
+		            	<option value="kid"> Kid </option>
+		            	<option value="Student"> Student </option>
+		            	<option value="Full worker"> Full worker </option>
+		            	<option value="Unemployed"> Unemployed </option>
+		            	<option value="Other"> Other </option>
+		            </select>
+               </div>
+		    </div>
+
+            <div class="row">
+	            <div class="leftSide">
+		            <label for="radio" id="radio-label">What would you decide? </label>
+		        </div>
+	            <div class="rigthSide">
+		            <ul id="radio">
+		               <li><label><input type="radio" name="idea">find yourself</label></li>
+		               <li><label><input type="radio" name="idea">change job</label></li>
+		               <li><label><input type="radio" name="idea">find hobby</label></li>
+		               <li><label><input type="radio" name="idea">have a fun</label></li>
+		               <li><label><input type="radio" name="idea">Other</label></li>
+		            </ul>
+		        </div>
+		    </div>
+
+		     <div class="row">
+		        <div class="leftSide">
+		            <label for="textarea" id="textarea-label">Could you please enter your personal hobby  </label>
+	            </div>
+	            <div class="rigthSide">
+		            <textarea rows="4" cols="40" id="textarea" name="hobby" class="inputfield" placeholder="Enter additional information..." maxlength="500"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+	            <div class="leftSide">
+		            <label for="checkbox" id="checkbox-label">What would you to do or what hobby do you have(select several if you have)?  </label>
+	            </div>
+	            <div class="rigthSide">
+		            <ul id="checkbox">
+		               <li><label><input type="checkbox" name="hobby" value='cooking'>cooking</label></li>
+		               <li><label><input type="checkbox" name="hobby" value='dansing'>dansing</label></li>
+		               <li><label><input type="checkbox" name="hobby" value='singing'>singing</label></li>
+		               <li><label><input type="checkbox" name="hobby" value='drafting'>drafting</label></li>
+		               <li><label><input type="checkbox" name="hobby" value='counting'>counting</label></li>
+		               <li><label><input type="checkbox" name="hobby" value='running'>running</label></li>
+		               <li><label><input type="checkbox" name="hobby" value='Others'>Others</label></li>
+		            </ul>
+	            </div>
+            </div>
+
+            <div class="row">
+		        <div class="leftSide">
+		            <label for="textarea" id="textarea-label">Could you please enter additional information  </label>
+	            </div>
+	            <div class="rigthSide">
+		            <textarea rows="4" cols="40" id="textarea" name="info" class="inputfield" placeholder="Enter additional information..." maxlength="500"></textarea>
+                </div>
+            </div>
+            <div class="row">
+	            <button type="submit" id="submitButton">Submit</button>
+            </div>
+     	</form>
+    </div>   
+</body>
+</html>
